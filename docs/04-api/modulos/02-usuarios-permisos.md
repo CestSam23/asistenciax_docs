@@ -32,3 +32,20 @@ Cuenta con rol principal inicialmente. Prohibido auto-registro público; alta po
 - [ ] Actualizar el concentrado de endpoints y OpenAPI.
 
 **Nota:** las rutas son propuestas, no una declaración del código existente.
+
+
+# Rutas despues de revisión
+
+| Método | Endpoint | Función |
+|---|---|---|
+| GET | `/api/v1/usuarios` | Listar usuarios con filtros y paginación |
+| POST | `/api/v1/usuarios` | Crear usuario y enviar invitación |
+| GET | `/api/v1/usuarios/{id}` | Consultar usuario |
+| PATCH | `/api/v1/usuarios/{id}` | Actualizar usuario |
+| POST | `/api/v1/usuarios/{id}/activar` | Reactivar cuenta |
+| POST | `/api/v1/usuarios/{id}/desactivar` | Desactivar cuenta |
+| POST | `/api/v1/usuarios/{id}/reset-password` | Enviar recuperación de contraseña |
+| POST | `/api/v1/usuarios/{id}/reenviar-invitacion` | Reenviar invitación |
+| GET | `/api/v1/roles` | Consultar roles |
+| GET | `/api/v1/permisos` | Consultar catálogo de permisos |
+| GET | `/api/v1/roles/{id}/permisos` | Consultar permisos de un rol |
